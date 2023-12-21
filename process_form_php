@@ -18,8 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $mailContent, $headers);
 
     // Redirect after submission (replace with your thank you page)
-header("Location: index.html");
-exit();
+    header("Location: index.html");
+    exit();
+}
 
 function test_input($data) {
     $data = trim($data);
