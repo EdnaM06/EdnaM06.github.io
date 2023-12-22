@@ -10,14 +10,81 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			#header {
-				background: url('images/Background 1copy.jpeg') center;
-				background-size: cover;
-				padding: 8em 0 6em 0;
-			}
-		</style>
-	</head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+    .code-challenges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+	.challenge-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+			height: 300px ; 
+    }
+
+    .challenge-card i {
+        font-size: 2.5em;
+        margin-top: 15px;
+    }
+
+	.challenge-card i.python-icon {
+	font-size: 2.5em;
+	margin-top: 15px;
+	color: black; 
+	}
+
+	.challenge-card i.mysql-icon {
+	font-size: 2.5em;
+	margin-top: 15px;
+	color: #00758F; 
+	}
+
+	/* Dropdown styles */
+	.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<style>
+    #header {
+        background: url('images/Background 1copy.jpeg') center;
+        background-size: cover;
+        padding: 8em 0 6em 0;
+    }
+</style>
+
+</head>
 	<body class="is-preload">
 <!-- Header -->
 <header id="header">
@@ -87,8 +154,60 @@
 						<ul class="actions">
 							<li><a href="https://www.linkedin.com/in/edna-kobo" class="button">Full Portfolio</a></li>
 						</ul>
-						</section>						
-				<!-- Three -->
+						</section>	
+				
+				<!-- Three -->	
+					<section class="code-challenges">
+     					<div class="challenge-card">
+        				<i class="fab fa-python"></i>
+        				<h2>Python Code Challenges</h2>
+        				<h1 style="font-size: smaller;">
+           				 Python is a user-friendly, high-level programming language <br>
+            			 renowned for its readability and versatility, <br>
+            			 suitable for a wide range of applications. <br>
+		    			 Created by Guido van Rossum .
+        				</h1>						
+        	   <!-- Dropdown box for Python challenges -->
+                    <select id="pythonChallengeDropdown">
+                    <option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
+                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
+              <!-- Add more Python challenge options as needed -->
+        			</select>
+    				</div>
+  
+    				<div class="challenge-card">
+       				<i class="fas fa-database"></i>
+        			<h2>MySQL Code Challenges</h2>
+        			<h1 style="font-size: smaller;">
+           			MySQL is a robust open-source relational database management system, <br>
+                    prized for its reliability and scalability, <br>
+                    essential for storing and managing structured data in various applications.
+                   </h1>						 
+                       <!-- Dropdown box for MySQL challenges -->
+                       <select id="MySQLChallengeDropdown">
+                       <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
+                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
+					   <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
+                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
+					   <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
+                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
+                       <!-- Add more MySQL challenge options as needed -->
+                    </select>
+                 </div>
+            </section>				  
+				<!-- Four -->
 					<section id="three">
 						<h2>Connect With Me</h2>
 						<p>Get in touch to explore collaboration opportunities, share insights, or discuss any inquiries. I welcome the chance to connect and engage in meaningful conversations.</p>
@@ -122,7 +241,7 @@
 							   </iframe>
 							   <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">							  
 					</section>
-				<!-- Four -->
+				<!-- Five -->
 				<!--
 					<section id="four">
 						<h2>Elements</h2>
