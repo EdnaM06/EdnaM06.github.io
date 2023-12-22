@@ -84,6 +84,16 @@
     }
 </style>
 
+<script>
+	// JavaScript to handle code viewing link
+	document.addEventListener("DOMContentLoaded", function() {
+		document.getElementById("pythonChallengeDropdown").addEventListener("change", function () {
+			var selectedOption = this.value;
+			document.getElementById("viewCodeLink").href = selectedOption;
+		});
+	});
+</script>
+
 </head>
 	<body class="is-preload">
 <!-- Header -->
@@ -169,22 +179,20 @@
         				</h1>						
         	   <!-- Dropdown box for Python challenges -->
                     <select id="pythonChallengeDropdown">
-                    <option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-					<option value="code_challenges/python/notebook1.html">Python Challenge 1</option>
-                    <option value="code_challenges/python/notebook2.html">Python Challenge 2</option>
-              <!-- Add more Python challenge options as needed -->
-        			</select>
+                    <option value="Python code challenges/algorithms_amino_acids_student_version.html">Amino acids</option>
+                    <option value="Python code challenges/Binary_search_model_student_notebook.html">Binery search model</option>
+					<option value="Python code challenges/complementary_dna_strands_student_version.html">Complementary dna strands</option>
+                    <option value="Python code challenges/Insertion_sort_student_version.html">Insertion sort</option>
+					<option value="Python code challenges/read_rna_code_student_version.html">Read rna</option>
+                    <option value="Python code challenges/remove_adjacent_numbers_student_version.html">Remove adjacent numbers</option>
+					<option value="Python code challenges/sort_and_merge_student_version.html">Sort and merge</option>
+                    <option value="Python code challenges/sort_tuple_list_student_version.html">Sort tuple</option>
+					<option value="Python code challenges/sorted_grouped_lists_student_version.html">Sorted grouped</option>
+                    <option value="Python code challenges/square_odd_number_student_version.html">Square odd number</option>
+					<option value="Python code challenges/squared_and_cubed_student_version.html">Squared and cubed</option>
+                    <option value="Python code challenges/symmetrical_sum_student_version.html">Symmetrical sum</option>
+					<option value="Python code challenges/Testing_your_code_student_version.html">Testing your code</option>
+        		</select>
     				</div>
   
     				<div class="challenge-card">
@@ -197,13 +205,10 @@
                    </h1>						 
                        <!-- Dropdown box for MySQL challenges -->
                        <select id="MySQLChallengeDropdown">
-                       <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
-                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
-					   <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
-                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
-					   <option value="code_challenges/mysql/notebook1.html">MySQL Challenge 1</option>
-                       <option value="code_challenges/mysql/notebook2.html">MySQL Challenge 2</option>
-                       <!-- Add more MySQL challenge options as needed -->
+                       <option value="SQL code challenges/2_Set_Theory_student_solution.html">Set Theory</option>
+                       <option value="SQL code challenges/Modifying_SQL_queries_student_version.html">Modifying SQL queries</option>
+					   <option value="SQL code challenges/Optimised_SQL_queries_student_version.html">Optimised SQL queries</option>
+                       <option value="SQL code challenges/SQL_Joins_student_version.html">SQL joins</option>
                     </select>
                  </div>
             </section>				  
