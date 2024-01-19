@@ -1,0 +1,45 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data
+    $name = $_POST["name"];
+    $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
+    $message = $_POST["message"];
+
+    // Validate email address
+    if (!$email) {
+        // Handle invalid email address
+        // For example, you might want to display an error message or redirect the user back to the form
+        // For now, let's redirect back to the form
+        header("Location: index.html");
+        exit();
+    }
+
+    // Your email address where you want to receive messages
+    $to = "ednamosima86@gmail.com";
+
+    // Subject of the email
+    $subject = "New Form Submission";
+
+    // Message body
+    $body = "Name: $name\nEmail: $email\nMessage:\n$message";
+
+    // Headers
+    $headers = "From: $email";
+
+    // Send email
+    $success = mail($to, $subject, $body, $headers);
+
+    if ($success) {
+        // Redirect the user to a thank you page after sending the email
+        header("Location: thank-you.html");
+        exit();
+    } else {
+        // Handle email sending failure
+        // For example, you might want to display an error message or log the error
+        // For now, let's redirect back to the form
+        header("Location: index.html");
+        exit();
+    }
+}
+?>
+
