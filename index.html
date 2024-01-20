@@ -62,10 +62,10 @@
 				justify-content: space-around;
 				position: relative;
 				color: rgb(123, 121, 121);
-				padding: 500px;
+				padding: 600px;
 				text-align: center;
 				animation: slideshow 12s infinite;
-				height: 600px; /* Adjust the height as needed */
+				height: 700px; /* Adjust the height as needed */
 				width: 100%; /* Adjust the width as needed */
 				margin: 0 auto; /* Center the container */
 			}
@@ -100,62 +100,67 @@
 			</style>
 
 			<style>
+				/* Challenge Card Styles */
 				.challenge-card {
-					border: 1px solid #ddd;
-					padding: 20px;
-					margin: 10px;
-					text-align: center;
-					width: 300px;
-					height: 300px;
+				border: 1px solid #ddd;
+				padding: 20px;
+				margin: 10px;
+				text-align: center;
+				width: 400px;
+				height: 400px; /* Adjust the height as needed */
 				}
-
+			
 				.challenge-card i {
-					font-size: 2.5em;
-					margin-top: 15px;
+				font-size: 9em;
+				margin-top: 20px; /* Adjust the margin-top as needed */
+				margin-bottom: 20px; /* Add some space between icon and dropdown */
 				}
-
+			
 				.challenge-card i.python-icon {
 					font-size: 2.5em;
 					margin-top: 15px;
 					color: black;
 				}
-
-				.challenge-card i.mysql-icon {
-					font-size: 2.5em;
-					margin-top: 15px;
-					color: #00758F;
+			
+					.challenge-card i.mysql-icon {
+						color: #00758F;
 				}
-
-				/* Dropdown styles */
+			
+				/* Dropdown Styles */
 				.dropdown {
-					position: relative;
-					display: inline-block;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				}
-
+			
 				.dropdown-content {
-					display: none;
-					position: absolute;
-					background-color: #f9f9f9;
-					min-width: 160px;
-					box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-					z-index: 1;
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+				z-index: 1;
 				}
-
+			
 				.dropdown-content a {
-					color: black;
-					padding: 12px 16px;
-					text-decoration: none;
-					display: block;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
 				}
-
+			
 				.dropdown-content a:hover {
-					background-color: #ddd;
+				background-color: #ddd;
 				}
-
+			
 				.dropdown:hover .dropdown-content {
-					display: block;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
 				}
-			</style>
+			</style>	  
 		</head>
 		<body class="is-preload">
 				
@@ -257,7 +262,7 @@
 						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
 							<h2>Python Code Challenges</h2>
 							<div class="challenge-card" style="width: 300px;">
-								<i class="fab fa-python" style="font-size: 4em;"></i>
+								<i class="fab fa-python" style="font-size: 10em;"></i>
 								<!-- Dropdown box for Python challenges -->
 								<select id="pythonChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
 									<option value="">Select a challenge</option>
@@ -282,7 +287,7 @@
 						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
 							<h2>MySQL Code Challenges</h2>
 							<div class="challenge-card" style="width: 300px;">
-								<i class="fas fa-database" style="font-size: 4em;"></i>
+								<i class="fas fa-database" style="font-size: 10em;"></i>
 								<!-- Dropdown box for MySQL challenges -->
 								<select id="MySQLChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
 									<option value="">Select a challenge</option>
