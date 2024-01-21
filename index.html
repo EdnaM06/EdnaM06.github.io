@@ -8,7 +8,6 @@
 			<head>
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<title>Edna Kobo's Portfolio</title>
 				<link rel="stylesheet" href="assets/css/main.css" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -57,14 +56,13 @@
 			</style>
 
 			<style>
-			/* Your first set of styles */
-			.code-challenges {
+				.code-challenges {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-around;
 				position: relative;
 				color: rgb(123, 121, 121);
-				padding: 20px;
+				padding: 500px;
 				text-align: center;
 				animation: slideshow 12s infinite;
 				height: 600px; /* Adjust the height as needed */
@@ -80,13 +78,13 @@
 			}
 
 			.slideshow-container {
-				width: 100%; /* Set the width as needed */
-				height: 400px; /* Set the height as needed */
-				overflow: hidden; /* Hide overflow to prevent white space */
+				width: 100%;
+				height: 400px;
+				overflow: hidden;
 			}
 
 			.slideshow {
-				animation: slideshow 15s linear infinite alternate;
+				animation: slideshow 15s linear infinite;
 			}
 
 			@keyframes slideshow {
@@ -128,11 +126,6 @@
 					margin-top: 20px;
 				}
 				
-				@supports (-ms-ime-align: auto) {
-				/* Microsoft Edge-specific CSS */
-				/* Add any necessary adjustments for Microsoft Edge */
-				}
-
 			</style>
 
 			<style>
@@ -302,12 +295,14 @@
 				
 				<!-- Three -->
 				<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-				<section class="code-challenges" style="text-align: center;">
-				<!-- Python Code Challenges -->
-					<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
-						<h2>Python Code Challenges</h2>
-						<div class="challenge-card" style="width: 300px; display: grid; grid-template-columns: 1fr; grid-gap: 10px;">
-							<i class="fab fa-python" style="font-size: 5em;"></i>
+					<section class="code-challenges" style="text-align: center;">
+
+
+						<!-- Python Code Challenges -->
+						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
+							<h2>Python Code Challenges</h2>
+							<div class="challenge-card" style="width: 300px;">
+								<i class="fab fa-python" style="font-size: 5em;"></i>
 								<!-- Dropdown box for Python challenges -->
 								<select id="pythonChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
 									<option value="">Select a challenge</option>
@@ -331,7 +326,7 @@
 						<!-- MySQL Code Challenges -->
 						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
 							<h2>MySQL Code Challenges</h2>
-							<div class="challenge-card" style="width: 300px; display: grid; grid-template-columns: 1fr; grid-gap: 10px;">
+							<div class="challenge-card" style="width: 300px;">
 								<i class="fas fa-database" style="font-size: 5em;"></i>
 								<!-- Dropdown box for MySQL challenges -->
 								<select id="MySQLChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
