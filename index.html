@@ -170,20 +170,75 @@
             align-items: center;
             justify-content: center;
         }
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.work-item {
+			width: 48%; /* Adjust as needed */
+			margin-bottom: 20px;
+		}
+
     </style>
-    <script>
-        function clearForm() {
-            console.log("Clearing form...");
-            var contactForm = document.getElementById("contact-form-new");
-            if (contactForm) {
-                contactForm.reset();
-            } else {
-                console.error("Form not found!");
-            }
-        }
-    </script>
+
+<style>
+	/* Add this style block to your existing styles or in the head section */
+
+	.nav-btns {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px; /* Adjust the margin as needed */
+	}
+
+	.slider-btn {
+		background-color: #3498db; /* Choose a color for the buttons */
+		color: #fff; /* Text color */
+		padding: 10px 20px; /* Adjust padding as needed */
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		transition: background-color 0.3s ease;
+	}
+
+	.slider-btn:hover {
+		background-color: #2980b9; /* Change the background color on hover */
+	}
+</style>
+		<style>
+			/* Add this style block to your existing styles or in the head section */
+
+			.nav-btns {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 20px; /* Adjust the margin as needed */
+				z-index: 1; /* Ensure buttons appear above the slides */
+			}
+
+			.slider-btn {
+				background-color: #3498db; /* Choose a color for the buttons */
+				color: #fff; /* Text color */
+				padding: 10px 20px; /* Adjust padding as needed */
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 16px;
+				transition: background-color 0.3s ease;
+			}
+
+			.slider-btn:hover {
+				background-color: #2980b9; /* Change the background color on hover */
+			}
+		</style>
+
+
 </head>
+
 <body>
+
 		<body class="is-preload">
 				
 			<!-- Header -->
@@ -216,68 +271,89 @@
 						<ul class="actions">
 							<li><a href="https://www.linkedin.com/in/edna-kobo" class="button">Learn More</a></li>
 						</ul>
-						</section>											
-				<!-- Two -->
+				</section>											
+			
+		<!-- Two -->
+			</section>	
 				<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-					<section id="two">
+				<section id="two">
+					<!-- Project Showcase Section with Thumbnail Slides -->
+					<section id="project-showcase">
 						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/BCX-Opportunity-Win-Vs-Loss-Insights.git" class="image fit thumb">
-									<img src="images/BCX thumb .png" alt="BCX Opportunity Win vs Loss Insights">
-								</a>
+
+					<!-- Single Slider -->
+						<div class="slider" id="slider1">
+						<!-- Project 1 -->
+						<div class="slide" style="background-image: url('images/BCX THUMB 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>BCX Opportunity Win vs Loss Insights</h3>
 								<p>Utilizing Salesforce data (Apr-Aug 2023) to inform strategic decisions, placing a strong emphasis on GTM segments. Insightful dashboard analyzing opportunity win-loss trends.</p>
-							</article>
-					
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/Portfolio-Projects" class="image fit thumb">
-									<img src="images/THUMB MOVIE.png" alt="Movie Recommendation System">
-								</a>
+								<a href="https://github.com/EdnaM06/BCX-Opportunity-Win-Vs-Loss-Insights.git" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
+						</div>
+
+						<!-- Project 2 -->
+						<div class="slide" style="background-image: url('images/MOVIE thumb 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>Movie Recommendation System</h3>
 								<p>Unsupervised learning project creating a personalized movie recommendation system for an enhanced user experience without explicit ratings reliance.</p>
-							</article>
-					
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/Portfolio-Projects.git" class="image fit thumb">
-									<img src="images/twitter thumb.gif" alt="Climate Sentiments Analysis">
-								</a>
+								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Unsupervised_Project_Movie_Reccommendations_System.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
+						</div>
+
+						<!-- Project 3 -->
+						<div class="slide" style="background-image: url('images/twitter thumb 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>Climate Sentiments Analysis</h3>
 								<p>This analysis is based on Twitter data, providing valuable insights. Companies with eco-friendly values aim to assess public sentiment on climate change for market insights, enhancing their understanding of product reception and addressing environmental concerns.</p>
-							</article>
-					
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/Portfolio-Projects.git" class="image fit thumb">
-									<img src="images/electricity thumb 2.png" alt="Spanish Goverment Energy Resources">
-								</a>
+								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Advanced_Classification_Sentiments_Analysis.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
+						</div>
+
+						<!-- Project 4 -->
+						<div class="slide" style="background-image: url('images/regression thumb 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>Spanish Government Energy Resources</h3>
 								<p>The Spanish government explores expanding renewable energy infrastructure investments and seeks insights into trends and patterns in the country's renewable and fossil fuel energy generation.</p>
-							</article>
-					
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/Portfolio-Projects.git" class="image fit thumb">
-									<img src="images/sitemgr_photo_93-removebg-preview (3).png" alt="Eskom-Visualisation Dashboard">
-								</a>
+								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Regression_Predict_Renewable_Energy_Resorce.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
+						</div>
+
+						<!-- Project 5 -->
+						<div class="slide" style="background-image: url('images/Eskom thumb 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>Eskom-Visualisation Dashboard</h3>
 								<p>The project provides a concise and insightful Power BI dashboard for Eskom, offering key visualizations on energy metrics and trends. Tailored for informed decision-making, it optimizes resource utilization to enhance operational efficiency.</p>
-							</article>
-					
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/EdnaM06/Portfolio-Projects.git" class="image fit thumb">
-									<img src="images/mysql thumb .png" alt="Bhejane Online Trading Store">
-								</a>
+								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Eskom-Visualisation4DS_Dashboard.pbix" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
+						</div>
+
+						<!-- Project 6 -->
+						<div class="slide" style="background-image: url('images/SQL thumb 2024.png'); background-size: cover;">
+							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
 								<h3>Bhejane Online Trading Store</h3>
 								<p>Focused on Bhejane Trading Store, this project revolves around optimizing the database-related inventory system. Specializing in COVID essential items, the goal is to elevate store efficiency and ensure seamless inventory management through SQL solutions.</p>
-							</article>
+								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/SQL_Predict_Bhejane%20Online%20Trading%20Store.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
+							</div>
 						</div>
-						<ul class="actions">
-							<li><a href="https://github.com/EdnaM06/Portfolio-Projects" class="button">Explore More</a></li>
-						</ul>
-						</section>	
+
+				 <!-- Navigation buttons for the slider -->
+				 <div class="nav-btns">
+					<button class="slider-btn" onclick="prevSlide()">Previous</button>
+					<button class="slider-btn" onclick="nextSlide()">Next</button>
+				</div>
+			</div>
+
+				<!-- Add more space here -->
+					<div style="margin-bottom: 30px;"></div>
+					<ul class="actions">
+						<li><a href="https://github.com/EdnaM06/Portfolio-Projects" class="button">Overall Projects</a></li>
+					</ul>
+				</section>
 				
-				<!-- Three -->
-				<h2>SORRY STILL BUSY WITH THIS SECTION</h2>
-				<meta name="google-adsense-account" content="ca-pub-1364314228379645">
+			<!-- Three -->
+		        </section>
+						<meta name="google-adsense-account" content="ca-pub-1364314228379645">
 					<section class="code-challenges" style="text-align: center;">
 						<!-- Python Code Challenges -->
 						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
@@ -708,7 +784,20 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>									  
+			<script src="assets/js/main.js"></script>
+			
+			<script>
+				function clearForm() {
+					console.log("Clearing form...");
+					var contactForm = document.getElementById("contact-form-new");
+					if (contactForm) {
+						contactForm.reset();
+					} else {
+						console.error("Form not found!");
+					}
+				}
+			</script>
+
 		<script>
 				// Function to reset form fields
 				function resetForm() {
@@ -724,5 +813,32 @@
 					});
 				});
 			</script>
+
+			<!-- JavaScript for slider functionality -->
+<script>
+    var currentSlide = 0;
+    var slides = document.querySelectorAll('#slider1 .slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Initial display for the slider
+    showSlide(currentSlide);
+</script>
+
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>		
 </body>
 </html>
