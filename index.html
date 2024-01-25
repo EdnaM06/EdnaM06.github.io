@@ -828,29 +828,29 @@
 			</script>
 
 			<!-- JavaScript for slider functionality -->
-<script>
-    var currentSlide = 0;
-    var slides = document.querySelectorAll('#slider1 .slide');
+			<script>
+				var currentSlide = 0;
+				var slides = document.querySelectorAll('#slider1 .slide');
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = (i === index) ? 'block' : 'none';
-        });
-    }
+				function showSlide(index) {
+					slides.forEach((slide, i) => {
+						slide.style.display = (i === index) ? 'block' : 'none';
+					});
+				}
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
+				function nextSlide() {
+					currentSlide = (currentSlide + 1) % slides.length;
+					showSlide(currentSlide);
+				}
 
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    }
+				function prevSlide() {
+					currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+					showSlide(currentSlide);
+				}
 
-    // Initial display for the slider
-    showSlide(currentSlide);
-</script>
+				// Initial display for the slider
+				showSlide(currentSlide);
+			</script>
 
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>		
 </body>
