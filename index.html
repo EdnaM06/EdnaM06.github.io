@@ -1,858 +1,667 @@
-<!DOCTYPE HTML>
-<!--
-    Edna Kobo's Portfolio
-    Welcome to my data-driven world! Explore the power of insights, data analysis, and SQL development. Let's transform information into knowledge together.
-    © 2023 Edna Kobo. All rights reserved.
--->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edna Kobo's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="google-adsense-account" content="ca-pub-1364314228379645">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQRCCK2P8X"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+  <title>Edna Kobo's portfolio - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	gtag('config', 'G-XQRCCK2P8X');
-	</script>
-
-    <style>
-        /* Add this style block to your HTML or your external CSS file */
-        .actions li {
-            margin-top: 10px; /* Adjust the value as needed for the desired spacing */
-        }
-    </style>
-
-	<!-- Include analytics.js in your HTML file -->
-	<script src="C:\Users\ednam\OneDrive\Documents\GitHub\EdnaM06.github.io\Analytics.js" defer></script>
-
-    <style>
-        #header {
-            background: url('images/Background 1copy.jpeg') center;
-            background-size: cover;
-            padding: 8em 0 6em 0;
-        }
-    </style>
-
-    <style>
-        .code-challenges {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            position: relative;
-            color: rgb(123, 121, 121);
-            padding: 20px; /* Adjust padding as needed */
-            text-align: center;
-            animation: slideshow 12s infinite;
-            height: auto; /* Set to 'auto' to allow content to determine height */
-            width: 100%; /* Adjust the width as needed */
-            margin: 0 auto; /* Center the container */
-        }
-
-        .challenge-card {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            width: 300px;
-            height: auto; /* Set to 'auto' to allow content to determine height */
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .slideshow-container {
-            width: 100%;
-            max-width: 800px; /* Adjust max-width as needed */
-            margin: 0 auto;
-            height: 300px; /* Adjust height as needed */
-            overflow: hidden;
-        }
-
-        .slideshow {
-            animation: slideshow 15s linear infinite;
-
-		}
-
-		@keyframes slideshow {
-            0%, 14.28% { background: url('images/B1.jpg') center center; background-size: cover; }
-            14.29%, 28.57% { background: url('images/B5.jpg') center center; background-size: cover; }
-            28.58%, 42.86% { background: url('images/B3.jpg') center center; background-size: cover; }
-            42.87%, 57.14% { background: url('images/B6.jpg') center center; background-size: cover; }
-            57.15%, 71.43% { background: url('images/B4.jpg') center center; background-size: cover; }
-            71.44%, 85.71% { background: url('images/B7.jpg') center center; background-size: cover; }
-            85.72%, 100% { background: url('images/B8.jpg') center center; background-size: cover; }
-            100.01%, 114.29% { background: url('images/B9.jpg') center center; background-size: cover; }
-            114.3%, 128.57% { background: url('images/B1.jpg') center center; background-size: cover; }
-		}
-
-        .code-challenges::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            animation: slideshow 15s linear infinite alternate;
-        }
-
-        .code-challenges h1 {
-            color: rgb(83, 82, 82); /* Set the heading color to a dark color */
-        }
-
-        .code-challenges {
-            background-size: cover;
-        }
-
-        /* Style adjustments for better visibility */
-        .challenge-section {
-            background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent overlay for better text visibility */
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(2, 2, 2, 0.5); /* Add a subtle box shadow */
-            margin-top: 20px;
-        }
-    </style>
-
-    <style>
-        /* Challenge Card Styles */
-        .challenge-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            width: 300px;
-            height: auto; /* Set to 'auto' to allow content to determine height */
-        }
-
-        .challenge-card i {
-            font-size: 5em; /* Adjust font size as needed */
-            margin-top: 20px; /* Adjust the margin-top as needed */
-            margin-bottom: 20px; /* Add some space between icon and dropdown */
-        }
-
-        .challenge-card i.python-icon {
-            font-size: 2.5em;
-            margin-top: 15px;
-            color: black;
-        }
-
-        .challenge-card i.mysql-icon {
-            color: #00758F;
-        }
-
-        /* Dropdown Styles */
-        .dropdown {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-		}
-
-		.work-item {
-			width: 48%; /* Adjust as needed */
-			margin-bottom: 20px;
-		}
-
-    </style>
-
-<style>
-	/* Add this style block to your existing styles or in the head section */
-
-	.nav-btns {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 20px; /* Adjust the margin as needed */
-	}
-
-	.slider-btn {
-		background-color: #3498db; /* Choose a color for the buttons */
-		color: #fff; /* Text color */
-		padding: 10px 20px; /* Adjust padding as needed */
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		font-size: 16px;
-		transition: background-color 0.3s ease;
-	}
-
-	.slider-btn:hover {
-		background-color: #2980b9; /* Change the background color on hover */
-	}
+  <style>
+    /* Your CSS styles here */
+    .flex-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 </style>
-		<style>
-			/* Add this style block to your existing styles or in the head section */
+    <style>
+      /* CSS for the home section */
+      #hero.home {
+        background-image: url('Images/em.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+    .swiper-slide {
+      display: flex; /* Use flexbox to align items */
+      justify-content: center; /* Center items horizontally */
+      align-items: flex-start; /* Align items at the start of the flex container */
+    }
+    
+    .journal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between the images */
+  padding: 10px; /* Add padding to each image */
+  border: 2px solid #ccc; /* Add a border around each image */
+  border-radius: 8px; /* Apply border radius for rounded corners */
+  height: 500px; /* Set a fixed height for each card */
+  overflow: hidden; /* Hide any content that overflows the container */
+    }
 
-			.nav-btns {
-				display: flex;
-				justify-content: space-between;
-				margin-top: 20px; /* Adjust the margin as needed */
-				z-index: 1; /* Ensure buttons appear above the slides */
-			}
+    .journal-info img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  }
+        
+    .journal-txt {
+      text-align: center; /* Center text */
+    }
+    
+    .key-guide {
+    display: flex;
+    justify-content: space-around; /* Horizontally align items */
+    margin-bottom: 20px; /* Add space between key guide and content */
+  }
 
-			.slider-btn {
-				background-color: #3498db; /* Choose a color for the buttons */
-				color: #fff; /* Text color */
-				padding: 10px 20px; /* Adjust padding as needed */
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-				font-size: 16px;
-				transition: background-color 0.3s ease;
-			}
+  .key-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
 
-			.slider-btn:hover {
-				background-color: #2980b9; /* Change the background color on hover */
-			}
-		</style>
+  /* Define colors for the badges */
+  .key-badge:nth-child(1) {
+    background-color: yellow; /* Intermediate */
+  }
 
+  .key-badge:nth-child(2),
+  .key-badge:nth-child(3),
+  .key-badge:nth-child(4) {
+    background-color: black; /* Learning */
+  }
 
+/* Style the main navigation */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the main navigation items */
+.navbar-nav li {
+    position: relative;
+    padding: 10px 15px;
+}
+
+/* Style the dropdown menu */
+.navbar-nav .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdown menu items */
+.navbar-nav .dropdown ul li {
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Show the dropdown menu on hover */
+.navbar-nav .dropdown:hover ul {
+    display: block;
+}
+
+/* Style the links in the dropdown menu */
+.navbar-nav .dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Change the background color of the links on hover */
+.navbar-nav .dropdown ul li a:hover {
+    background-color: #ddd;
+}
+
+</style>
+
+    <!-- Include Swiper JS and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+  <li><a href="https://drive.google.com/file/d/1J8mLJvNSgDb3FPEXIs66NX-NoYA2xp68/view?usp=sharing"><i class="fas fa-file-alt"></i> CV</a></li>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-		<body class="is-preload">
-				
-			<!-- Header -->
-			<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-				<header id="header">
-					<div class="inner" style="text-align: center;">
-						<a href="#" class="image avatar">
-							<img src="images/ekl-removebg-preview.png" alt="" style="border-radius: 50%; width: 150px; height: 150px; display: inline-block;" />
-						</a>
-						<h1 style="text-align: center;">
-							<strong>Edna Kobo</strong>
-							</h1>Data Analyst | SQL Developer | Data Scientist
-							<br />
-							</h1>Transforming Data into Knowledge
-							<br />
-							</h1>		
-						</div>
-				</header>
-		<!-- Main -->
-		<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-			<div id="main">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-				<!-- One -->
-					<section id="one">
-						<header>
-							<!-- <a href="https://www.canva.com/design/DAF3grOQn7I/watch?utm_content=DAF3grOQn7I&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Edna the data fanatic</a> by Edna Kobo -->
-							<h2 style="font-weight: bold; font-size: 3.9em;">Hello! Meet Edna Kobo, Data Fanatic.</h2>
-						</header>						
-					<p>Welcome to my data-driven world! I specialize in transforming raw data into valuable insights, guiding businesses through the maze of information, and making informed decisions. As a dedicated Data Analyst, SQL Developer, and Data Scientist, I excel in unravelling stories hidden within numbers, turning complex data into a strategic asset. Proficient in MySQL, I seamlessly manage databases from design to optimization, showcasing expertise in data analysis, dashboard creation, and effective project leadership.
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/edna-kobo" class="button">Learn More</a></li>
-						</ul>
-				</section>											
-			
-		<!-- Two -->
-			</section>	
-				<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-				<section id="two">
-					<!-- Project Showcase Section with Thumbnail Slides -->
-					<section id="project-showcase">
-						<h2>Recent Work</h2>
+      <a href="index.html" class="logo"><img src="Images/Black_And_Beige__Minimalist_Aesthetic_Modern_Simple_Typography_Salt_Logo__1_-removebg-preview.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
-					<!-- Single Slider -->
-						<div class="slider" id="slider1">
-						<!-- Project 1 -->
-						<div class="slide" style="background-image: url('images/BCX THUMB 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>BCX Opportunity Win vs Loss Insights</h3>
-								<p>Utilizing Salesforce data (Apr-Aug 2023) to inform strategic decisions, placing a strong emphasis on GTM segments. Insightful dashboard analyzing opportunity win-loss trends.</p>
-								<a href="https://github.com/EdnaM06/BCX-Opportunity-Win-Vs-Loss-Insights.git" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-						<!-- Project 2 -->
-						<div class="slide" style="background-image: url('images/MOVIE thumb 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>Movie Recommendation System</h3>
-								<p>Unsupervised learning project creating a personalized movie recommendation system for an enhanced user experience without explicit ratings reliance.</p>
-								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Unsupervised_Project_Movie_Reccommendations_System.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-						<!-- Project 3 -->
-						<div class="slide" style="background-image: url('images/twitter thumb 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>Climate Sentiments Analysis</h3>
-								<p>This analysis is based on Twitter data, providing valuable insights. Companies with eco-friendly values aim to assess public sentiment on climate change for market insights, enhancing their understanding of product reception and addressing environmental concerns.</p>
-								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Advanced_Classification_Sentiments_Analysis.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-						<!-- Project 4 -->
-						<div class="slide" style="background-image: url('images/regression thumb 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>Spanish Government Energy Resources</h3>
-								<p>The Spanish government explores expanding renewable energy infrastructure investments and seeks insights into trends and patterns in the country's renewable and fossil fuel energy generation.</p>
-								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Regression_Predict_Renewable_Energy_Resorce.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-						<!-- Project 5 -->
-						<div class="slide" style="background-image: url('images/Eskom thumb 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>Eskom-Visualisation Dashboard</h3>
-								<p>The project provides a concise and insightful Power BI dashboard for Eskom, offering key visualizations on energy metrics and trends. Tailored for informed decision-making, it optimizes resource utilization to enhance operational efficiency.</p>
-								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/Eskom-Visualisation4DS_Dashboard.pbix" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-						<!-- Project 6 -->
-						<div class="slide" style="background-image: url('images/SQL thumb 2024.png'); background-size: cover;">
-							<div class="slide-content" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: #fff;">
-								<h3>Bhejane Online Trading Store</h3>
-								<p>Focused on Bhejane Trading Store, this project revolves around optimizing the database-related inventory system. Specializing in COVID essential items, the goal is to elevate store efficiency and ensure seamless inventory management through SQL solutions.</p>
-								<a href="https://github.com/EdnaM06/Portfolio-Projects/blob/54cff93066bea951da4f4e049761a9e42749f030/SQL_Predict_Bhejane%20Online%20Trading%20Store.ipynb" class="button" style="padding: 12px 20px; background-color: #ffffff; color: #fff; display: block; margin: 0 auto; text-align: center;">Explore More About The Project </a>
-							</div>
-						</div>
-
-				 <!-- Navigation buttons for the slider -->
-				 <div class="nav-btns">
-					<button class="slider-btn" onclick="prevSlide()">Previous</button>
-					<button class="slider-btn" onclick="nextSlide()">Next</button>
-				</div>
-			</div>
-
-				<!-- Add more space here -->
-					<div style="margin-bottom: 30px;"></div>
-					<ul class="actions">
-						<li><a href="https://github.com/EdnaM06/Portfolio-Projects" class="button">Overall Projects</a></li>
-					</ul>
-				</section>
-				
-			<!-- Three -->
-		        </section>
-						<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-					<section class="code-challenges" style="text-align: center;">
-						<!-- Python Code Challenges -->
-						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
-							<h2>Python Code Challenges</h2>
-							<div class="challenge-card" style="width: 300px;">
-								<i class="fab fa-python" style="font-size: 5em;"></i>
-								<!-- Dropdown box for Python challenges -->
-								<select id="pythonChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
-									<option value="">Select a challenge</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/algorithms_amino_acids_student_version.ipynb">Amino acids</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/Binary_search_model_student_notebook.ipynb">Binary search model</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/complementary_dna_strands_student_version.ipynb">Complementary DNA strands</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/Insertion_sort_student_version.ipynb">Insertion sort</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/read_rna_code_student_version.ipynb">Read RNA</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/remove_adjacent_numbers_student_version.ipynb">Remove adjacent numbers</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/sort_and_merge_student_version.ipynb">Sort and merge</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/sort_tuple_list_student_version.ipynb">Sort tuple</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/sorted_grouped_lists_student_version.ipynb">Sorted grouped</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/square_odd_number_student_version.ipynb">Square odd number</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/squared_and_cubed_student_version.ipynb">Squared and cubed</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/symmetrical_sum_student_version.ipynb">Symmetrical sum</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/tree/c025d5a99c3a86d01b7025ce4a101dedca580d1f/python%20Code%20Challenges/Testing_your_code_student_version.ipynb">Testing your code</option>
-								</select>
-							</div>
-						</div>
-
-						<!-- MySQL Code Challenges -->
-						<div class="challenge-section" style="display: inline-block; margin: 10px; text-align: left;">
-							<h2>MySQL Code Challenges</h2>
-							<div class="challenge-card" style="width: 300px;">
-								<i class="fas fa-database" style="font-size: 5em;"></i>
-								<!-- Dropdown box for MySQL challenges -->
-								<select id="MySQLChallengeDropdown" style="width: 100%; margin-top: 10px;" onchange="window.location.href=this.value;">
-									<option value="">Select a challenge</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/SQL%20Code%20Challenges/2_Set_Theory_student_solution.ipynb">Set Theory</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/SQL%20Code%20Challenges/Modifying_SQL_queries_student_version.ipynb">Modifying SQL queries</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/SQL%20Code%20Challenges/Optimised_SQL_queries_student_version.ipynb">Optimized SQL queries</option>
-									<option value="https://github.com/EdnaM06/Portfolio-Projects/blob/c025d5a99c3a86d01b7025ce4a101dedca580d1f/SQL%20Code%20Challenges/SQL_Joins_student_version.ipynb">SQL joins</option>
-								</select>
-							</div>
-						</div>
-					</section>
-			  
-					<section id="three">
-						<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-						<h2>Connect With Me</h2>
-						<p>Get in touch to explore collaboration opportunities, share insights, or discuss any inquiries. I welcome the chance to connect and engage in meaningful conversations.</p>
-					
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<!-- Form for sending messages -->
-								<form id="contact-form-new" action="https://formspree.io/f/mjvnkqjq" method="POST">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" /></li>
-										<li><input type="button" value="Clear Form" onclick="clearForm()" /></li>
-									</ul>
-								</form>                                                                
-							</div>
-					
-							<!-- Location GIF and link to Google Maps -->
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<a href="https://www.google.com/maps?q=-23.787354,29.379991" target="_blank" style="display: block; text-align: center;">
-											<img src="https://i.pinimg.com/originals/45/2c/3d/452c3deef1a83f6dee5ea526f3bcb5cf.gif" alt="Location GIF" style="width: 100%;">
-											<p style="margin: 10px 0 0; font-weight: bold;">LOCATE ME HERE</p>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					
-						<!-- Showcase iframe and link -->
-						<div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-							<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAF3ekzENMk/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-						</div>
-						<a href="https://www.canva.com/design/DAF3ekzENMk/view?utm_content=DAF3ekzENMk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
-					</section>										
-				<!-- Five -->
-				<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-							while (!deck.isInOrder()) {
-							print 'Iteration ' + i;
-							deck.shuffle();
-							i++;
-							}
-
-							print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-                        <section id="thank-you">
-        <h2>Thank You!</h2>
-        <p>Your message has been sent successfully. I'll get back to you as soon as possible.</p>
-		<p>You can customize this section further as needed -->
-        <ul class="actions">
-            <li><a href="index.html" class="button">Back to Home</a></li>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-    </section>    
-	</div>
-		<!-- Footer -->
-		<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-		<footer id="footer">
-			<div class="inner" style="text-align: center;">
-				<ul class="icons">
-					<li><a href="https://github.com/EdnaM06" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://allinoneaura.blogspot.com/" class="icon brands fa-blogger"><span class="label">Blogger</span></a></li>
-					<li><a href="https://www.linkedin.com/in/edna-kobo" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://drive.google.com/file/d/1J8mLJvNSgDb3FPEXIs66NX-NoYA2xp68/view?usp=sharing"><span class="label">CV</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2023 Edna Kobo. All rights reserved.</li>
-				</ul>
-			</div>
-		</footer>		
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-		<!-- Scripts -->
-		<meta name="google-adsense-account" content="ca-pub-1364314228379645">
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-			<script>
-				function clearForm() {
-					console.log("Clearing form...");
-					var contactForm = document.getElementById("contact-form-new");
-					if (contactForm) {
-						contactForm.reset();
-					} else {
-						console.error("Form not found!");
-					}
-				}
-			</script>
+    </div>
+  </header><!-- End Header -->
 
-		<script>
-				// Function to reset form fields
-				function resetForm() {
-					document.getElementById("contact-form").reset();
-				}
-		</script>
-			<script>
-			// JavaScript to handle code viewing link
-				document.addEventListener("DOMContentLoaded", function() {
-					document.getElementById("pythonChallengeDropdown").addEventListener("change", function () {
-						var selectedOption = this.value;
-						document.getElementById("viewCodeLink").href = selectedOption;
-					});
-				});
-			</script>
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
 
-			<!-- JavaScript for slider functionality -->
-			<script>
-				var currentSlide = 0;
-				var slides = document.querySelectorAll('#slider1 .slide');
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Edna Kobo, Data Analyst, SQL Developer, Freelancer, Data Scientist"></span></h1>
+        <p>DATA ANALYST, SQL DEVELOPER, FREELANCER, DATA SCIENTIST</p>
 
-				function showSlide(index) {
-					slides.forEach((slide, i) => {
-						slide.style.display = (i === index) ? 'block' : 'none';
-					});
-				}
+        <ul class="list-unstyled list-social">
+          <li><a href="https://allinoneaura.blogspot.com/"><i class="fab fa-blogger"></i></a></li>
+          <li><a href="https://github.com/EdnaM06"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://drive.google.com/file/d/1J8mLJvNSgDb3FPEXIs66NX-NoYA2xp68/view?usp=sharing"><i class="fas fa-file-alt"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/edna-kobo"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </div><!-- End Hero -->
 
-				function nextSlide() {
-					currentSlide = (currentSlide + 1) % slides.length;
-					showSlide(currentSlide);
-				}
+  <main id="main">
 
-				function prevSlide() {
-					currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-					showSlide(currentSlide);
-				}
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
 
-				// Initial display for the slider
-				showSlide(currentSlide);
-			</script>
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="Images/6.png" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
 
-			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>		
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">Turning Data into Knowledge </p>
+              <p class="separator">Aspiring to be a Business Analyst, I aim to turn data into knowledge. Step into my data-driven realm! I'm skilled at translating raw data into actionable insights, helping businesses navigate the maze of information, and facilitating informed decision-making. With expertise in data analysis, dashboard creation, and project leadership, I excel at unraveling the narratives hidden in data, transforming intricate datasets into strategic assets. Proficient in MySQL, I handle database management from inception to optimization, ensuring seamless operations and impactful outcomes.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+        <div class="section-title text-left">
+          <h2>Key Specialties</h2>
+        </div>
+      </div>
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart-line"></i>
+                <span>Data Visualization</span>
+                <p class="separator">I create compelling and informative data visualizations. </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span> Data Analysis</span>
+                <p class="separator">I perform in-depth data analysis to drive strategic decisions. </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-search"></i> 
+                <span> Data Interpretation</span>
+                <p class="separator"> I interpret and synthesize complex data for insights.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-display"></i>
+                <span> Microsoft PowerPoint</span>
+                <p class="separator"> I design visually engaging PowerPoint presentations. </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <li><i class="bi bi-clipboard-data"></i>
+                <span>Presentation Skills</span>
+                <p class="separator"> I deliver engaging and impactful presentations.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-table"></i>
+                <span>Microsoft Excel</span>
+                <p class="separator"> I leverage Excel for advanced data analysis.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-database"></i>
+                <span>MySQL</span>
+                <p class="separator">I efficiently manage and query MySQL databases. </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-graph-up"></i>
+                <span>Microsoft Power BI</span>
+                <p class="separator">I develop interactive Power BI dashboards.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-people"></i>
+                <span>Teamwork</span>
+                <p class="separator">I excel in collaborative team environments.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-award"></i>
+                <span>Project Leadership</span>
+                <p class="separator"> I provide effective leadership in project management.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-chat-left-quote"></i> 
+                <span>Good Communication</span>
+                <p class="separator"> I communicate complex ideas clearly and effectively.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Portfolio</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-analysis">Analysis</li>
+              <li data-filter=".filter-app">App Development</li>
+              <li data-filter=".filter-web">Web Development</li>
+              <li data-filter=".filter-data">Data Solutions</li>
+              <li data-filter=".filter-management">Database Management</li>
+            </ul>          
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analysis">
+            <img src="Images/BCX.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Opportunity Win vs Loss Insights</h4>
+              <p>Analysis</p>
+              <a href="Images/opportunity win vs loss.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="Images/movie.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Movie Recommendation System</h4>
+              <p>App Development</p>
+              <a href="Images/Movie recommender.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="Images/climate.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Climate Sentiments Analysis</h4>
+              <p>Web Development</p>
+              <a href="Images/twitter sentiments.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+            <img src="Images/RE.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Spanish Government Energy Resources</h4>
+              <p>Data Solutions</p>
+              <a href="Images/Renewable source .png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analysis">
+            <img src="Images/eskom.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Eskom-Visualisation Dashboard</h4>
+              <p>Analysis</p>
+              <a href="Images/Eskom dashboard.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <img src="Images/bhejane.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>Bhejane Online Trading Store</h4>
+                <p>Database Management</p>
+                <a href="Images/My%20SQL%20bhejane.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Bhejane Online Trading Store"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>        
+        </div>
+  </div><!-- End Portfolio Section -->
+
+   <!-- ======= Programming Languages Section ======= -->
+   <section id="programming-languages" class="text-left paddsection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Programming Languages</h2>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+  
+          <!-- MySQL Card -->
+          <div class="swiper-slide">
+            <div class="key-badge" style="background-color: rgb(145, 145, 34);">Intermediate</div>
+            <div class="journal-info">
+              <img src="Images/MY SQL.png" class="img-responsive" alt="img">
+              <div class="journal-txt">
+                <h4>MySQL</h4>
+                <p class="separator">MySQL is an open-source relational database management system.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Python Card -->
+          <div class="swiper-slide">
+            <div class="key-badge" style="background-color: rgb(145, 145, 18);">Intermediate</div>
+            <div class="journal-info">
+              <img src="Images/PYTHON P L.png" class="img-responsive" alt="img">
+              <div class="journal-txt">
+                <h4>Python</h4>
+                <p class="separator">Python is a high-level, interpreted programming language.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- R Card -->
+          <div class="swiper-slide">
+            <div class="key-badge" style="background-color: black;">Learning</div>
+            <div class="journal-info">
+              <img src="Images/R PL.png" class="img-responsive" alt="img">
+              <div class="journal-txt">
+                <h4>R</h4>
+                <p class="separator">R is a programming language and free software environment for statistical computing and graphics.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Java Card -->
+          <div class="swiper-slide">
+            <div class="key-badge" style="background-color: black;">Learning</div>
+            <div class="journal-info">
+              <img src="Images/JAVA .png" class="img-responsive" alt="img">
+              <div class="journal-txt">
+                <h4>Java</h4>
+                <p class="separator">Java is a high-level, class-based, object-oriented programming language.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- C++ Card -->
+          <div class="swiper-slide">
+            <div class="key-badge" style="background-color: black;">Learning</div>
+            <div class="journal-info">
+              <img src="Images/C++.png" class="img-responsive" alt="img">
+              <div class="journal-txt">
+                <h4>C++</h4>
+                <p class="separator">C++ is a general-purpose programming language created as an extension of the C programming language.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section><!-- Programming Languages Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+                <h2 class="mb-30">GET IN TOUCH</h2>
+                <ul class="contact-details">
+                  <li><span>Perskebult_1048 St, Kgotlhwane, 0742</span></li>
+                  <li><span>South Africa, Limpopo </span></li>
+                  <li><span>ednamosima86@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>                        
+
+            <div class="col-lg-6">
+              <form action="https://formspree.io/f/mjvnkqjq" method="POST">
+                <div class="row gy-3">
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+
+                  </div>
+                  <div class="col-lg-12 mt-0">
+                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  </div>
+                </div>
+              </form>
+          </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center" style="background-color: #333;">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://allinoneaura.blogspot.com/"><i class="fab fa-blogger"></i></a></li>
+          <li><a href="https://github.com/EdnaM06"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://drive.google.com/file/d/1J8mLJvNSgDb3FPEXIs66NX-NoYA2xp68/view?usp=sharing"><i class="fas fa-file-alt"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/edna-kobo"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Edna Kobo's portforlio. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000, // Change slides every 5 seconds
+        disableOnInteraction: false, // Enable navigation buttons during autoplay
+      },
+    });
+</script>
+<script>
+  var swiper = new Swiper('.portfolio-details-slider', {
+    slidesPerView: 3, // Display three slides at a time
+    spaceBetween: 30, // Space between slides
+    loop: true, // Enable loop mode
+    autoplay: {
+      delay: 5000, // Delay between transitions
+      disableOnInteraction: false, // Enable autoplay even after user interaction
+    },
+  });
+</script>
 </body>
 </html>
