@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #efefef;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            background: url('https://images.pexels.com/photos/2034380/pexels-photo-2034380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+            background-size: cover; 
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 2; 
+            margin: 0;
+            font-size: 2em;
+        }
+        /* Ensure the header takes up the full width and centers its content */
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0; /* Adjust padding as needed */
+            background-color: #f8f9fa; /* Optional: add a background color for visibility */
+        }
+
+        header .container {
+            display: inline-block; /* Centers the container within the header */
+        }
+
+        header h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 2.5rem; /* Adjust font size as needed */
+            color: #ffffff; /* Optional: change text color */
+        }
+
+        .experience {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        .experience h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        .experience p {
+            margin: 5px 0;
+        }
+
+        .education, .certifications, .skills {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .experience h2, .education h2, .certifications h2, .skills h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+        }
+
+        .skills li {
+            background: #cac9c9;
+            padding: 10px 20px;
+            border-radius: 50px; 
+            text-align: center;
+            margin: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        #scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+        }
+
+        #scroll-top:hover {
+            background: #555;
+        }
+
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: none; /* Hide by default */
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #preloader.show {
+            display: flex; /* Show when needed */
+        }
+    </style>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Journey through my Experience</h1>
+        </div>
+    </header>           
+
+    <div class="container">
+        <!-- Content sections -->
+        <div class="experience">
+            <img src="assets/img/telkom(1).jpeg" alt="Telkom Logo">
+            <img src="assets/img/telkom_1_-removebg-preview.png" alt="Other Company Logo">
+            <div>
+                <h2>SAP Analyst: Sales & Data Analyst Intern - Telkom-Openserve</h2>
+                <p><strong>Gauteng</strong> | May 2024 - Present</p>
+                <p class="description"><strong>Description:</strong> During my internship through Telkom at Openserve, we worked in the enterprise department, handling sales and data analysis. I engaged with clients and utilized SAP to optimize sales strategies and order management.</p>
+                <div class="experience-details">
+                    <ul>
+                        <li>Sales & Data Analysis: Conducted comprehensive data analysis to support sales initiatives and improve decision-making.</li>
+                        <li>Client Quotations: Created and managed detailed quotations for clients, ensuring accurate pricing and timely delivery.</li>
+                        <li>Data Gathering: Collected data from quotations and integrated it into dashboards to provide actionable insights for sales strategies.</li>
+                        <li>SAP Analysis: Sales Order Management - Track sales of Openserve products and services, manage order processing, analyze fulfillment rates, and ensure timely delivery of orders.</li>
+                    </ul>
+                </div>
+            </div>            
+        </div>    
+
+        <div class="experience">
+            <img src="assets/img/BCXedna.png" alt="Company 1 Logo">
+            <img src="assets/img/BCXedna-removebg-preview.png" alt="Company 2 Logo">
+            <div>
+                <h2>Student Intern - BCX</h2>
+                <p><strong>Gauteng</strong> | Aug 2023 - Dec 2023</p>
+                <p class="description"><strong>Description:</strong> During my student internship at BCX, while participating in the Explore AI Academy data science program, We achieved a notable success with 47.49% of opportunities resulting in 'Closed Won,' demonstrating strong sales performance.</p>
+                <div class="experience-details"></div>
+                <ul>
+                    <li>Strategic Insights: Transformed complex datasets into strategic insights, contributing to business growth and operational excellence.</li>
+                    <li>Reporting: Created and presented detailed reports to stakeholders, highlighting key trends and recommendations for future actions.</li>
+                    <li>Opportunities Win vs. Loss Insights: Used Power BI for dynamic data visualization and Excel for data cleaning, focusing on analyzing business opportunities to understand win vs. loss rates and enhancing decision-making with interactive dashboards.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong> Certificate in Data Science</strong><br>
+            Explore AI Academy As Sand Technologies| 2023</p>
+        </div>
+
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <p><strong>Data Science Program</strong> | SETA | 2023</p>
+            <p class="description"><strong>Description:</strong> Achieved a 90% accuracy pass rate in data entry and analysis by meticulously handling large datasets.</p>
+            <div class="Teamprojects">
+                <h3>Team Project during my 2023 intake Data Science program</h3>
+                <ul>
+                    <li>Climate Change Sentiment Analysis.</li>
+                    <li>Eskom Power Generation.</li>
+                    <li>EA Movie Recommendation.</li>
+                    <li>Spain Electricity Shortfall Regression Predict.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Analysis</li>
+                <li>Dashboard Creation</li>
+                <li>MySQL</li>
+                <li>Project Leadership</li>
+                <li>Business Intelligence</li>
+                <li>Reporting and Visualization</li>
+                <li>Feature Engineering</li> 
+                <li>Machine Learning</li>
+                <li>Data Cleaning</li> 
+                <li>Statistical Analysis</li>
+                <li>Predictive Modelling</li>
+                <li>Data Wrangling</li>
+                <li>Data Mining</li> 
+                <li>Data Storytelling</li>
+                <li>Communication</li> 
+                <li>Team Work</li>
+                <li>Creative Thinker</li>
+                <li>Problem Solver</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for visiting! &copy; 2024 Edna's Portfolio </p>
+        <a href="#Up" id="scroll-top">Top</a>
+    </footer>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Scroll to Top Button
+        document.getElementById('scroll-top').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Preloader
+        window.addEventListener('load', function () {
+            document.getElementById('preloader').classList.remove('show');
+        });
+    </script>
+</body>
+</html>

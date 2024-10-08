@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Skill Showcase</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .form-control {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    
+    .service-request-form {
+      background: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .project-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    border-radius: 8px; 
+    overflow: hidden;
+  }
+
+  .project-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+  }
+
+  .project-item .content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .project-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding-bottom: 30px; 
+  }
+
+  .project-item p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+  }
+  .profile-picture {
+  position: relative;
+  bottom: 20px; /* Adjust as needed */
+}
+
+    </style>    
+
+  <!-- Favicons -->
+  <link href="assets/img/1.png" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/1.png" alt="">
+        <h1 class="sitename">Skill Showcase</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      
+      <a class="btn-getstarted" href="index.html#about">Dashboard Projects</a>
+      
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 data-aos="fade-up">Welcome to <span>Skill Showcase</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Explore skills that drive innovation and success.<br>
+            </p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about" class="btn-get-started">Get Started</a>
+                <a href="assets/img/YouTube Channel Trailer Video .mp4" class="glightbox btn-watch-video d-flex align-items-center">
+                    <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                </a>
+            </div>
+            <img src="assets/img/Digital-skills-removebg-preview.png" class="img-fluid hero-img" alt="Skills Showcase Image" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+    </div>    
+
+  </section><!-- /Hero Section -->
+
+  <!-- Featured Services Section -->
+  <section id="featured-services" class="featured-services section light-background">
+  
+    <div class="container">
+  
+      <div class="row gy-4">
+  
+        <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Data Analysis & Visualization</a></h4>
+              <p class="description">Transform raw data into actionable insights with advanced analysis and compelling visuals.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+  
+        <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Machine Learning Models</a></h4>
+              <p class="description">Develop and deploy predictive models to uncover patterns and forecast trends.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+  
+        <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Data Cleaning & Preparation</a></h4>
+              <p class="description">Ensure data quality by cleaning, organizing, and preparing datasets for analysis.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+  
+      </div>
+  
+    </div>
+  
+  </section><!-- /Featured Services Section -->  
+
+    <!-- About Section -->
+      <section id="about" class="about section">
+
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+              <p class="who-we-are">Welcome to AI WORLD</p>
+              <h3>Dive into the Future of AI</h3>
+              <p class="fst-italic">
+                Discover hands-on tutorials and demos that simplify data analysis and drive actionable insights.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Advanced tutorials on machine learning and data analysis.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Innovative tech reviews and applications.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Stay ahead with the latest AI trends and breakthroughs.</span></li>
+              </ul>
+              <a href="https://youtube.com/channel/UC6gN7iERCgIXozv4CfNkufA" class="read-more"><span>Subscribe Now</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+              <h4>[COMING SOON] : Stay Current with the Latest Trends</h4>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <a href="https://www.youtube.com/watch?v=video1" target="_blank">
+                    <img src="assets/img/woman-sits-desk-with-computer-screen-showing-graph_1222383-15557 (1).jpg" class="img-fluid" alt="AI Video 1">
+                  </a>
+                  <p class="video-title"><a href="https://www.youtube.com/watch?v=video1" target="_blank">Introduction to Data Analysis with AI</a></p>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <a href="https://www.youtube.com/watch?v=video4" target="_blank">
+                    <img src="assets/img/How to Visualize Data Trends with AI (2).png" class="img-fluid" alt="AI Video 4">
+                  </a>
+                  <p class="video-title"><a href="https://www.youtube.com/watch?v=video4" target="_blank">How to Visualize Data Trends with AI</a></p>
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.youtube.com/watch?v=video3" target="_blank">
+                    <img src="assets/img/Building Your First Machine Learning Model.png" class="img-fluid" alt="AI Video 3">
+                  </a>
+                  <p class="video-title"><a href="https://www.youtube.com/watch?v=video3" target="_blank">Building Your First Machine Learning Model</a></p>
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.youtube.com/watch?v=video2" target="_blank">
+                    <img src="assets/img/Data_Cleaning-removebg-preview (1).png" class="img-fluid" alt="AI Video 2">
+                  </a>
+                  <p class="video-title"><a href="https://www.youtube.com/watch?v=video2" target="_blank">Data Cleaning Techniques with Excel</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- /About Section --> 
+
+    <!-- Clients Section -->
+      <section id="clients" class="clients section">
+
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header text-center">
+            <h2>Key Partnerships That Shaped My Career</h2>
+            <p>Explore the companies that have played a pivotal role in my professional journey, contributing to the success and growth of my career:</p>
+          </div>
+
+          <div class="row gy-4">
+
+            <div class="col-xl-3 col-md-6 col-12 client-logo">
+              <a href="https://www.telkom.co.za" target="_blank">
+                <img src="assets/img/telkom-1.jpg" class="img-fluid" alt="Telkom">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-6 col-12 client-logo">
+              <a href="https://www.openserve.co.za" target="_blank">
+                <img src="assets/img/openserve.jpg" class="img-fluid" alt="Openserve">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-6 col-12 client-logo">
+              <a href="https://www.bcx.co.za" target="_blank">
+                <img src="assets/img/bcx.png" class="img-fluid" alt="BCX">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-6 col-12 client-logo">
+              <a href="https://www.explore.ai/" target="_blank">
+                <img src="assets/img/explore.sand.png" class="img-fluid" alt="ExploreAI Academy">
+              </a>
+            </div><!-- End Client Item -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Clients Section -->
+
+   <!-- Services Section -->
+      <section id="services" class="services section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Expertise</h2>
+          <p>Offering a range of data solutions to help you succeed</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row g-5">
+
+            <!-- Service Items -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-bar-chart-line icon text-primary"></i>
+                <div>
+                  <h3>Exploratory Data Analysis (EDA)</h3>
+                  <p>Discover patterns and insights through comprehensive data exploration.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-orange position-relative">
+                <i class="bi bi-graph-up icon text-primary"></i>
+                <div>
+                  <h3>Market Research Analysis</h3>
+                  <p>Analyze market trends and consumer behavior for informed decision-making.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-teal position-relative">
+                <i class="bi bi-file-earmark-bar-graph icon text-primary"></i>
+                <div>
+                  <h3>Dashboard Creation</h3>
+                  <p>Build interactive dashboards to visualize key metrics and insights.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-red position-relative">
+                <i class="bi bi-eraser icon text-primary"></i>
+                <div>
+                  <h3>Data Cleaning</h3>
+                  <p>Ensure data accuracy by removing errors and inconsistencies.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item item-indigo position-relative">
+                <i class="bi bi-file-earmark-text icon text-primary"></i>
+                <div>
+                  <h3>Presentations</h3>
+                  <p>Create engaging presentations to effectively communicate insights.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item item-pink position-relative">
+                <i class="bi bi-gear icon text-primary"></i>
+                <div>
+                  <h3>Feature Engineering</h3>
+                  <p>Enhance model performance by creating meaningful features.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-search icon text-primary"></i>
+                <div>
+                  <h3>Data Mining</h3>
+                  <p>Extract valuable insights and patterns from large datasets.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->      
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-bar-chart-line icon text-primary"></i>
+                <div>
+                  <h3>Business Intelligence (BI) Reporting</h3>
+                  <p>Generate reports that provide strategic insights and support decision-making.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-lightning icon text-success"></i>
+                <div>
+                  <h3>Predictive Analytics</h3>
+                  <p>Utilize data to forecast future trends and behaviors.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->            
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-graph-up-arrow icon text-primary"></i>
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Create visual representations of data to enhance understanding and insights.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->      
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="1100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-database icon text-primary"></i>
+                <div>
+                  <h3>SQL</h3>
+                  <p>Write and optimize SQL queries for efficient data manipulation.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="1200">
+              <div class="service-item item-orange position-relative">
+                <i class="bi bi-box-seam icon text-primary"></i>
+                <div>
+                  <h3>Others</h3>
+                  <p>Custom solutions tailored to meet unique data needs and challenges.</p>
+                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+        <section id="pricing" class="pricing section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Pricing</h2>
+            <p>Affordable plans to suit your data needs, from startups to enterprises.</p>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Basic Plan -->
+                  <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pricing-item">
+                      <h3>Basic Plan</h3>
+                      <h4>R500<span> / project</span></h4>
+                      <p class="description">Perfect for small data tasks or one-time projects.</p>
+                      <ul>
+                        <li><i class="bi bi-check"></i> Data Cleaning</li>
+                        <li><i class="bi bi-check"></i> Basic Data Analysis</li>
+                        <li><i class="bi bi-check"></i> Simple Dashboards</li>
+                        <li class="na"><i class="bi bi-x"></i> Advanced Analytics</li>
+                        <li class="na"><i class="bi bi-x"></i> Market Research</li>
+                      </ul>
+                      <a href="#" class="cta-btn">Get Started</a>
+                    </div>
+                  </div><!-- End Basic Plan -->
+
+                <!-- Standard Plan -->
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="pricing-item featured">
+                          <p class="popular">Popular</p>
+                          <h3>Standard Plan</h3>
+                          <h4>R1500<span> / project</span></h4>
+                          <p class="description">Great for more detailed data work and ongoing projects.</p>
+                          <ul>
+                            <li><i class="bi bi-check"></i> Everything in Basic</li>
+                            <li><i class="bi bi-check"></i> Advanced Data Analysis</li>
+                            <li><i class="bi bi-check"></i> Market Research</li>
+                            <li><i class="bi bi-check"></i> Customized Reports</li>
+                            <li class="na"><i class="bi bi-x"></i> Predictive Analytics</li>
+                          </ul>
+                          <a href="#" class="cta-btn">Get Started</a>
+                      </div>
+                    </div><!-- End Standard Plan -->
+
+                    <!-- Premium Plan -->
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="pricing-item">
+                        <h3>Premium Plan</h3>
+                        <h4>R3000<span> / project</span></h4>
+                        <p class="description">For comprehensive data solutions and in-depth analysis.</p>
+                        <ul>
+                          <li><i class="bi bi-check"></i> Everything in Standard</li>
+                          <li><i class="bi bi-check"></i> Predictive Analytics</li>
+                          <li><i class="bi bi-check"></i> Feature Engineering</li>
+                          <li><i class="bi bi-check"></i> Business Intelligence Reports</li>
+                          <li><i class="bi bi-check"></i> Full Project Support</li>
+                        </ul>
+                        <a href="#" class="cta-btn">Get Started</a>
+                      </div>
+                    </div><!-- End Premium Plan -->
+
+                  </div>
+              </div> 
+        </section><!-- /Pricing Section -->
+
+        <!-- Service Request Section -->
+            <section id="service-request" class="service-request section" style="background: url('your-background-image.jpg') no-repeat center center fixed; background-size: cover;">
+              <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+              <div class="container" style="position: relative; z-index: 2;">
+                <!-- Section Title -->
+                <div class="section-title" data-aos="fade-up">
+                  <h2>Request a Service</h2>
+                  <p>Need a custom solution? Let me know how I can help!</p>
+                </div><!-- End Section Title -->
+
+                <div class="row justify-content-center">
+                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <form id="serviceRequestForm" action="https://formspree.io/f/mjvnkqjq" method="POST" class="service-request-form">
+                      <div class="form-group mb-3">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <select id="service" name="service" class="form-control" required>
+                          <option value="" disabled selected>Which Service</option>
+                          <option value="data_analysis">Data Analysis</option>
+                          <option value="data_cleaning">Data Cleaning</option>
+                          <option value="dashboard_creation">Dashboard Creation</option>
+                          <option value="market_research">Market Research Analysis</option>
+                          <option value="presentations">Presentations</option>
+                          <option value="feature_engineering">Feature Engineering</option>
+                          <option value="data_mining">Data Mining</option>
+                          <option value="business_intelligence">Business Intelligence Reporting</option>
+                          <option value="predictive_analytics">Predictive Analytics</option>
+                          <option value="data_visualization">Data Visualization</option>
+                          <option value="sql">SQL</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                      <div class="form-group mb-4">
+                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Describe your project or request..." required></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary" style="background-color: #24718f; border-color: #00bcd4;">Submit Request</button>
+                      </div>
+                      <!-- Hidden input to send the email to your address -->
+                      <input type="hidden" name="_replyto" value="ednamosima86@gmail.com">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section><!-- End Service Request Section -->
+
+    <!-- Projects Section -->
+        <section id="projects" class="projects section black-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Projects</h2>
+            <p>Showcasing my work and achievements</p>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 30
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <!-- Project Item -->
+                <div class="swiper-slide">
+                  <div class="project-item" style="background-image: url('assets/img/pexels-alexmoliski-27519811.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <h3>BCX Opportunity Win vs Loss Insights</h3>
+                      <p>Analyzed opportunity data to determine win vs loss patterns and insights for BCX.</p>
+                    </div>
+                  </div>
+                </div><!-- End Project Item -->
+
+                <!-- Project Item -->
+                <div class="swiper-slide">
+                  <div class="project-item" style="background-image: url('assets/img/pexels-artempodrez-5716001.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <h3>Climate Sentiments Analysis</h3>
+                      <p>Conducted sentiment analysis on climate-related discussions to gauge public opinion.</p>
+                    </div>
+                  </div>
+                </div><!-- End Project Item -->
+
+                <!-- Project Item -->
+                <div class="swiper-slide">
+                  <div class="project-item" style="background-image: url('assets/img/pexels-thefabricamike-27351445.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <h3>Movie Recommendation App</h3>
+                      <p>Developed an app that provides personalized movie recommendations based on user preferences.</p>
+                    </div>
+                  </div>
+                </div><!-- End Project Item -->
+
+                <!-- Project Item -->
+                <div class="swiper-slide">
+                  <div class="project-item" style="background-image: url('assets/img/p (2).jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <h3>Eskom-Visualisation Dashboard</h3>
+                      <p>Created a visualization dashboard for Eskom to monitor and analyze energy usage and performance.</p>
+                    </div>
+                  </div>
+                </div><!-- End Project Item -->
+
+                <!-- Project Item -->
+                <div class="swiper-slide">
+                  <div class="project-item" style="background-image: url('assets/img/pexels-pixabay-273238.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <h3>Spanish Government Energy Resources</h3>
+                      <p>Visualized and analyzed energy resource data for the Spanish government to aid in decision-making.</p>
+                    </div>
+                  </div>
+                </div><!-- End Project Item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+    </section><!-- /Projects Section -->
+
+    <!-- Contact  -->
+    <section id="contact" class="contact section">
+
+      <!-- Contact Section -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for any inquiries or project requests.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>South Africa,Limpopo</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-youtube"></i>
+              <h3>Follow Us</h3>
+              <p><a href="https://www.youtube.com/channel/UC6gN7iERCgIXozv4CfNkufA" target="_blank" rel="noopener noreferrer">Visit My YouTube Channel</a></p>
+            </div>
+          </div>          
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ednamosima86@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact  -->
+
+    <!-- Footer Section -->
+<section id="footer" class="footer section">
+  <div class="container footer-top mt-4">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">Showcase Skills</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>South Africa, Limpopo</p>
+          <p><strong>Email:</strong> <span>ednamosima86@gmail.com</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="https://aiupgradehub.blogspot.com/"><i class="fab fa-blogger"></i></a>
+          <a href="https://github.com/EdnaM06"><i class="bi bi-github"></i></a>
+          <a href="https://drive.google.com/file/d/1NLAkxyvtlmAHWvBrT_wqVb2cKziktg1-/view?usp=sharing"><i class="fas fa-file-alt"></i></a>
+          <a href="https://www.linkedin.com/in/edna-kobo"><i class="bi bi-linkedin"></i></a>
+        </div>            
+      </div>
+      <div class="col-lg-8 col-md-6 footer-links d-flex justify-content-between">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Profile Picture -->
+        <div class="profile-picture" style="padding: 10px; width: 400px;">
+          <img src="assets/img/Edna Kobo.png" alt="Profile Picture" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>©2024 <span>Copyright</span> <strong class="px-1 sitename">Edna's Portfolio</strong><span>All Rights Reserved</span></p>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</section><!-- End Footer -->
+
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // JavaScript to clear the form after submission
+    document.getElementById('serviceRequestForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Use Formspree's fetch API method to handle form submission
+      fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert('Thank you! Your request has been sent.');
+          this.reset(); // Clear the form
+        } else {
+          alert('Oops! There was a problem submitting your request.');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
